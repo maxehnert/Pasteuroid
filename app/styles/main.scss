@@ -95,7 +95,9 @@ body {
 
 // Variables
 $purple: #E400E4;
-
+$light-background: #ECECEC;
+$light-green: #2FCC97;
+$orange: #f06d06;
 
 //navbar
 .container-fluid {
@@ -121,10 +123,12 @@ $purple: #E400E4;
 
 .jumbotron {
   background: #FFFFFF;
+  background-image: linear-gradient( to right, $light-green, #FFFFFF, #FFFFFF, $light-green);
+  margin-bottom: 0;
 }
 
 .first-feature {
-  background: #D8D8D8;
+  background: $light-background;
   display: flex;
   flex-direction: column;
 
@@ -133,9 +137,14 @@ $purple: #E400E4;
     font-size: 32px;
   }
 
+  h3 {
+    color: $light-green;
+  }
+
   img {
     border: 5px solid black;
-    margin: 20px 0;
+    border-radius: 5px;
+    margin: 20px;
     transform: scaleX(-1);
   }
 
@@ -168,5 +177,108 @@ $purple: #E400E4;
   .col-cont-2-inner {
     margin: 0 auto;
     width: 70%;
+  }
+}
+
+.second-feature,
+.third-feature {
+  background: #FFFFFF;
+  padding-top: 1px;
+
+  h2 {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 50px;
+    color: $purple;
+  }
+
+  .products {
+    display: flex;
+    justify-content: center;
+  }
+
+  .accessories {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .product,
+  .accessory {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-title,
+  .accessory-title {
+    color: $light-green;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .product-img-cont,
+  .accessory-img-cont {
+    display: flex;
+    min-height: 250px;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .accessory-img-cont-sticker {
+    background: radial-gradient($purple 54%, #000);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    transform: skew(10deg);
+    box-shadow: inset 3px 3px 4px #000;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .product-desc-cont,
+  .accessory-desc-cont {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+
+    ul {
+      list-style: none;
+    }
+
+    button {
+      background: $light-green;
+    }
+  }
+}
+
+.fourth-feature {
+  background-image: linear-gradient(to right, #2FCC97, #FFFFFF, #FFFFFF, #2FCC97);
+  padding-bottom: 50px;
+
+  h2 {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 50px;
+    color: $purple;
+  }
+
+  .locations {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .location-img {
+    max-height: 300px;
+    max-width: 250px;
+  }
+
+  .trader-img {
+    border-radius: 50%;
   }
 }
