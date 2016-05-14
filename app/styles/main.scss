@@ -114,6 +114,8 @@ $orange: #f06d06;
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a {
   background: $purple;
@@ -280,5 +282,42 @@ $orange: #f06d06;
 
   .trader-img {
     border-radius: 50%;
+  }
+}
+
+.footer {
+  background: #000000;
+
+  .newsletter-inner {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+
+    span {
+      color: $light-green;
+      font-size: 20px;
+    }
+
+    input {
+      width: 20%;
+    }
+
+    button {
+      background: $light-green;
+      color: black;
+    }
+  }
+
+  .disclaimer {
+    display: flex;
+    justify-content: space-around;
+
+    img {
+      width: 25px;
+    }
+
+    a {
+      color: $purple;
+    }
   }
 }
