@@ -91,3 +91,48 @@ body {
     border-bottom: 0;
   }
 }
+/////////////////////////////////////////////
+
+// Variables
+$purple: #E400E4;
+
+
+//navbar
+.container-fluid {
+  background: $purple;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.navbar-brand {
+  color: #FFFFFF !important; // cause bootstrap
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a {
+  background: $purple;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.jumbotron {
+  background: #FFFFFF;
+}
+
+.first-feature {
+  background: #D8D8D8;
+
+  h3 {
+    color: $purple;
+    font-size: 32px;
+  }
+
+  img {
+    border: 5px solid black;
+    margin: 20px 0;
+  }
+}
