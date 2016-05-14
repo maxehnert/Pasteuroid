@@ -125,8 +125,10 @@ $purple: #E400E4;
 
 .first-feature {
   background: #D8D8D8;
+  display: flex;
+  flex-direction: column;
 
-  h3 {
+  h2 {
     color: $purple;
     font-size: 32px;
   }
@@ -134,5 +136,37 @@ $purple: #E400E4;
   img {
     border: 5px solid black;
     margin: 20px 0;
+    transform: scaleX(-1);
+  }
+
+  .run-down-desc {
+    padding-left: 0;
+  }
+}
+
+.col-cont-1 {
+  display: flex;
+
+  .col-cont-1-inner {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+  }
+
+  .col-cont-1-inner-desc {
+    width: 70%;
+  }
+
+  .col-cont-1-img {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.col-cont-2 {
+  .col-cont-2-inner {
+    margin: 0 auto;
+    width: 70%;
   }
 }
