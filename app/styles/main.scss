@@ -18,24 +18,9 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
 }
 
 /* Custom page footer */
@@ -53,37 +38,18 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    // max-width: 730px;
-  }
+
 
   /* Remove the padding we set earlier */
-  .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
@@ -91,13 +57,25 @@ body {
     border-bottom: 0;
   }
 }
-/////////////////////////////////////////////
+/////////////--MY CSS--////////////////////
 
 // Variables
 $purple: #E400E4;
 $light-background: #ECECEC;
 $light-green: #2FCC97;
 $orange: #f06d06;
+
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: Montserrat;
+}
+
+li, p {
+  font-family: Lato;
+}
 
 //navbar
 .container-fluid {
@@ -107,7 +85,6 @@ $orange: #f06d06;
 
 .navbar-brand {
   color: #FFFFFF !important; // cause bootstrap
-  font-weight: bold;
   font-size: 30px;
 }
 
@@ -127,6 +104,11 @@ $orange: #f06d06;
   background: #FFFFFF;
   background-image: linear-gradient( to right, $light-green, #FFFFFF, #FFFFFF, $light-green);
   margin-bottom: 0;
+
+  h2 {
+    font-size: 30px;
+    color: $light-green;
+  }
 }
 
 .first-feature {
