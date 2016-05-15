@@ -83,9 +83,23 @@ li, p {
   box-shadow: 0 4px 2px -2px gray;
 }
 
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navbar-brand {
   color: #FFFFFF !important; // cause bootstrap
   font-size: 30px;
+  order: 1;
+
+  @media (max-width: 668px) {
+    font-size: 22px;
+  }
+}
+
+.navbar-toggle {
+  order: 2;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -100,6 +114,16 @@ li, p {
   font-size: 20px;
 }
 
+.products,
+.accessories,
+.locations,
+.newsletter-inner,
+.disclaimer {
+  @media (max-width: 740px) {
+    flex-direction: column;
+  }
+}
+
 .jumbotron {
   background: #FFFFFF;
   background-image: linear-gradient( to right, $light-green, #FFFFFF, #FFFFFF, $light-green);
@@ -108,6 +132,10 @@ li, p {
   h2 {
     font-size: 30px;
     color: $light-green;
+
+    @media (max-width: 740px) {
+      color: #000000;
+    }
   }
 }
 
@@ -147,20 +175,36 @@ li, p {
   }
 
   .col-cont-1-inner-desc {
-    width: 70%;
+    margin: 0 3%;
+
+    @media (min-width: 740px) {
+      width: 70%;
+    }
   }
 
   .col-cont-1-img {
     flex-basis: 50%;
     display: flex;
     align-items: center;
+
+    @media (max-width: 740px) {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 740px) {
+    flex-direction: column;
   }
 }
 
 .col-cont-2 {
   .col-cont-2-inner {
-    margin: 0 auto;
-    width: 70%;
+    margin: 0 3%;
+
+    @media (min-width: 740px) {
+      margin: 0 auto;
+      width: 75%;
+    }
   }
 }
 
@@ -278,10 +322,18 @@ li, p {
     span {
       color: $light-green;
       font-size: 20px;
+
+      @media (max-width: 740px) {
+        text-align: center;
+      }
     }
 
     input {
       width: 20%;
+
+      @media (max-width: 740px) {
+        width: 100%;
+      }
     }
 
     button {
@@ -300,6 +352,16 @@ li, p {
 
     a {
       color: $purple;
+    }
+
+    @media (max-width: 740px) {
+      .disclaimer-statement {
+        order: 2;
+      }
+
+      .disclaimer-contact {
+        order: 1;
+      }
     }
   }
 }
