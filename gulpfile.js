@@ -175,5 +175,5 @@ gulp.task('default', ['clean'], () => {
 });
 
 gulp.task('deploy', () => {
-  return gulp.src('dist/**/*').pipe(ghPages());
+  return gulp.src(['dist/**/*', 'CNAME']).pipe(ghPages());
 });
