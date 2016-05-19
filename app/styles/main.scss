@@ -60,7 +60,8 @@ body {
 /////////////--MY CSS--////////////////////
 
 // Variables
-$purple: #E400E4;
+// $purple: #E400E4;
+$purple: #F34055;
 $light-background: #ECECEC;
 $light-green: #2FCC97;
 $orange: #f06d06;
@@ -125,9 +126,12 @@ li, p {
 }
 
 .jumbotron {
-  background: #FFFFFF;
-  background-image: linear-gradient( to right, $light-green, #FFFFFF, #FFFFFF, $light-green);
+  // background: #FFFFFF;
+  // background-image: linear-gradient( to right, $light-green, #FFFFFF, #FFFFFF, $light-green);
   margin-bottom: 0;
+  background: url("../images/girl1.jpeg") #0F0F0E;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
 
   h2 {
     font-size: 30px;
@@ -154,8 +158,6 @@ li, p {
   }
 
   img {
-    border: 5px solid black;
-    border-radius: 5px;
     margin: 20px;
     transform: scaleX(-1);
   }
@@ -246,10 +248,12 @@ li, p {
   .product-img-cont,
   .accessory-img-cont {
     display: flex;
-    min-height: 250px;
+    height: 250px;
 
     img {
+      object-fit: contain;
       margin: 0 auto;
+      max-width: 100%;
     }
   }
 
