@@ -131,7 +131,7 @@
                 <li>Advanced Polymer Sidewalls.</li>
                 <li>Enhanced Lifting Handle never deformes under intense chugging.</li>
               </ul>
-              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="Classic PPP">BUY NOW</button>
+              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="Classic PPP" data-bottle="1" data-price="4.00">BUY NOW</button>
             </div>
           </div>
           <div class="product product-2">
@@ -146,7 +146,7 @@
                 <li>Compact enough to take with you anywhere.</li>
                 <li>A True <strong>0%</strong> Product.</li>
               </ul>
-              <button type="button" class="btn btn" data-toggle="modal" data-target="#buyNowModal" data-product="Sprinter Series">BUY NOW</button>
+              <button type="button" class="btn btn" data-toggle="modal" data-target="#buyNowModal" data-product="Sprinter Series" data-bottle="1" data-prce="2.00">BUY NOW</button>
             </div>
           </div>
           <div class="product product-3">
@@ -161,7 +161,7 @@
                 <li>Never worry about a deformed jug ever again.</li>
                 <li>Clear sidewalls allow you to quickly messure your gainz consumption.</li>
               </ul>
-              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="OG Glass">BUY NOW</button>
+              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="OG Glass" data-bottle="1" data-price="10.00">BUY NOW</button>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@
                 <li>Infused with TREN for that extra bump mid workout</li>
                 <li>Make those those dyel bitches know you're serious about your workout drinks</li>
               </ul>
-              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="Pasteuroid Caps">BUY NOW</button>
+              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="Pasteuroid Caps" data-price="1.50">BUY NOW</button>
             </div>
           </div>
           <div class="accessory accessory-2">
@@ -195,7 +195,7 @@
                 <li>Enhance your lifts with this holder.</li>
                 <li>Will clanks loud as fuck to make everyone aware of your presense.</li>
               </ul>
-              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="OG Glass Holder">BUY NOW</button>
+              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="OG Glass Holder" data-price="19.99">BUY NOW</button>
             </div>
           </div>
           <div class="accessory accessory-2">
@@ -210,7 +210,7 @@
                 <li>Don't forget to put one on your rear window of your lifted YJ bro.</li>
                 <li>Comes in packs of 5.</li>
               </ul>
-              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="OG Glass Holder">BUY NOW</button>
+              <button type="button" class="btn" data-toggle="modal" data-target="#buyNowModal" data-product="Pasteuroid Stickers" data-price="2.00">BUY NOW</button>
             </div>
           </div>
         </div>
@@ -258,23 +258,31 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-sub-title" id="myModalLabel"></h4>
           </div>
-          <div class="modal-body">
-            <label for="checkout-cap-color">Choose Your Cap Color</label>
-            <select class="form-control" id="checkout-cap-color">
-              <option>Red</option>
-              <option>Blue</option>
-              <option>Black</option>
-              <option>Pink</option>
-              <option>Green</option>
-            </select>
-            <br>
+          <div class="modal-body modal-body-product">
+            <div class="cap-color-container">
+              <label for="checkout-cap-color">Choose Your Cap Color</label>
+              <select class="form-control" id="checkout-cap-color">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Black</option>
+                <option>Pink</option>
+                <option>Green</option>
+              </select>
+              <br>
+            </div>
             <div class="form-group">
-              <label for="checkout-quantity" class=" control-label">How many Jugs can you handle?</label>
+              <label for="checkout-quantity" class=" control-label">How many can you handle?</label>
               <div class="">
                 <input type="number" class="form-control" id="icheckout-quantity" value="1" min="1">
               </div>
             </div>
+            <div class="input-group">
+              <label for="total-price">Price</label>
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control price-input" id="total-price" placeholder="price" disabled>
+            </div>
           </div>
+
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary checkout">Proceed to Cart</button>
